@@ -1,0 +1,66 @@
+{
+  "header": {
+    "company": "YEVROPROTOKOL",
+    "tagline": "24/7 Doimo"
+  },
+  "hero": {
+    "title": "XIZMATLAR",
+    "titleHighlight": "YEVROPROTOKOL",
+    "subtitle": "24/7",
+    "subtitleText": "DOIMO",
+    "description": "YTH ishtirokisiz yevroprotokol xizmatlari — bu YTH ishtirokchilari tomonidan hujjatlarni rasmiylashtirish, YTH xodimlarini chaqirmasdan.",
+    "specialOffer": "Toshkentdagi eng past narxlar!!!",
+    "contactInfo": "Favqulodda komissar chaqirish",
+    "phone": "+998 99 328 07 77",
+    "buttons": {
+      "orderCall": "QOʻNGʻIROQ BUYURTMA QILISH",
+      "damageAssessment": "ZARAR BAHOLASH",
+      "sendTablet": "YTH PLANSHETINI YUBORISH"
+    }
+  },
+  "info": {
+    "items": {
+      "24_7": {
+        "title": "24/7 Doimo",
+        "description": "Bizning mutaxassislarimiz doimo ishlaydi va YTH joyiga istalgan vaqtda chiqishga tayyor. Tez javob berish va professional yordam."
+      },
+      "expertise": {
+        "title": "Professional Ekspertiza",
+        "description": "Ko'p yillik tajribaga ega malakali ekspertlar to'liq zarar bahosini o'tkazadi va talablarga muvofiq barcha kerakli hujjatlarni rasmiylashtiradi."
+      },
+      "prices": {
+        "title": "Qulay Narxlar",
+        "description": "Toshkentda yevroprotokol xizmatlari uchun eng raqobatbardosh narxlar. Yashirin to'lovsiz shaffof narx belgilash."
+      }
+    },
+    "urgentHelp": {
+      "title": "Shoshilinch yordam kerakmi?",
+      "description": "Hoziroq qo'ng'iroq qiling! Bizning favqulodda komissar 15 daqiqa ichida sizga keladi",
+      "freeCall": "Qo'ng'iroq bepul • Maslahat bepul"
+    },
+    "video": {
+      "title": "Yevroprotokol qanday rasmiylashtiriladi?",
+      "description": "Yevroprotokol to'g'ri rasmiylashtirilishi va sug'urta to'lovi olish uchun qanday hujjatlar kerakligi haqida batafsil ko'rsatmani tomosha qiling"
+    },
+    "services": {
+      "title": "Yevroprotokol xizmatlari",
+      "originalPrice": "1 200 000.00 so'm",
+      "currentPrice": "999 999.95 so'm",
+      "mainTitle": "BIZ DOIMO ISHLAYMIZ",
+      "subtitle": "BIZ BILAN — OSON VA TEZ",
+      "description1": "Bizning xizmatlarimizdan foydalanib, siz Yevroprotokol to'g'ri tuzilishiga ishonch hosil qilishingiz mumkin, bu keyingi sug'urta va huquqiy masalalarni hal qilish uchun muhim. Bizga murojaat qiling va biz sizga har bir bosqichda ishonchli yordam beramiz.",
+      "description2": "Yevroprotokol to'g'ri to'ldirilishi YTH dan keyin sug'urta va huquqiy masalalarni hal qilish jarayonida hal qiluvchi rol o'ynaydi. To'ldirishdagi xatolar yoki kamchiliklar tushunmovchiliklarga, hal qilish jarayonidagi kechikishlarga va voqea tomonlari uchun salbiy oqibatlarga olib kelishi mumkin."
+      }
+  },
+  "footer": {
+    "consultation": "Hoziroq bepul maslahat buyurtma qiling!",
+    "telegram": "Telegram orqali bog'lanish",
+    "phone": "Favqulodda komissar chaqirish",
+    "location": "Ofis joylashuvi",
+    "additionalServices": "Qo'shimcha xizmatlar",
+    "additionalDescription1": "Shuningdek, biz YTH ni hal qilish bilan bog'liq qo'shimcha xizmatlarni taklif qilamiz, jumladan sug'urta va huquqiy masalalar bo'yicha maslahatlar, kerakli hujjatlarni rasmiylashtirish va mijozni hal qilishning barcha bosqichlarida qo'llab-quvvatlash.",
+    "additionalDescription2": "YTH ni to'g'ri va samarali hal qilish va yo'l-transport hodisasi holatida o'z manfaatlaringizni himoya qilish uchun bizning tajriba va professionalligimizga ishoning.",
+    "writeToTelegram": "Telegramga yozish",
+    "copyright": "© 2024 Yevroprotokol. Barcha huquqlar himoyalangan."
+  }
+}

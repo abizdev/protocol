@@ -1,0 +1,66 @@
+{
+  "header": {
+    "company": "EUROPROTOCOL",
+    "tagline": "24/7 Around the Clock"
+  },
+  "hero": {
+    "title": "SERVICES",
+    "titleHighlight": "EUROPROTOCOL",
+    "subtitle": "24/7",
+    "subtitleText": "AROUND THE CLOCK",
+    "description": "Europrotocol services without traffic police participation — this is the documentation of accident documents by accident participants, without calling traffic police officers.",
+    "specialOffer": "Lowest prices in Tashkent!!!",
+    "contactInfo": "Emergency commissioner call",
+    "phone": "+998 99 328 07 77",
+    "buttons": {
+      "orderCall": "ORDER A CALL",
+      "damageAssessment": "DAMAGE ASSESSMENT",
+      "sendTablet": "SEND ACCIDENT TABLET"
+    }
+  },
+  "info": {
+    "items": {
+      "24_7": {
+        "title": "24/7 Around the Clock",
+        "description": "Our specialists work around the clock and are ready to go to the accident site at any time of day. Quick response and professional assistance."
+      },
+      "expertise": {
+        "title": "Professional Expertise",
+        "description": "Qualified experts with years of experience will conduct a full damage assessment and prepare all necessary documents according to requirements."
+      },
+      "prices": {
+        "title": "Affordable Prices",
+        "description": "The most competitive prices in Tashkent for europrotocol services. Transparent pricing without hidden fees."
+      }
+    },
+    "urgentHelp": {
+      "title": "Need urgent help?",
+      "description": "Call right now! Our emergency commissioner will come to you within 15 minutes",
+      "freeCall": "Free call • Free consultation"
+    },
+    "video": {
+      "title": "How to fill out europrotocol?",
+      "description": "Watch detailed instructions on how to properly fill out europrotocol and what documents are needed to receive insurance payment"
+    },
+    "services": {
+      "title": "Europrotocol services",
+      "originalPrice": "1,200,000.00 som",
+      "currentPrice": "999,999.95 som",
+      "mainTitle": "WE WORK AROUND THE CLOCK",
+      "subtitle": "WITH US — SIMPLE AND FAST",
+      "description1": "Using our services, you can be sure that your Europrotocol will be compiled correctly, which is important for the subsequent settlement of insurance and legal issues. Contact us and we will provide you with reliable support at every stage.",
+      "description2": "Proper completion of the Europrotocol plays a crucial role in the process of settling insurance and legal issues after an accident. Errors or omissions in completion can lead to misunderstandings, delays in the settlement process and negative consequences for the parties to the incident."
+    }
+  },
+  "footer": {
+    "consultation": "Order a free consultation right now!",
+    "telegram": "Contact via Telegram",
+    "phone": "Emergency commissioner call",
+    "location": "Office location",
+    "additionalServices": "Additional services",
+    "additionalDescription1": "We also offer additional services related to accident settlement, including consultations on insurance and legal issues, assistance in preparing necessary documents and supporting the client at all stages of settlement.",
+    "additionalDescription2": "Trust our experience and professionalism to ensure proper and effective accident settlement and protect your interests in case of a traffic accident.",
+    "writeToTelegram": "Write to Telegram",
+    "copyright": "© 2024 Europrotocol. All rights reserved."
+  }
+}
