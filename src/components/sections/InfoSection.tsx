@@ -6,23 +6,26 @@ import {
   CurrencyDollarIcon,
   PhoneIcon 
 } from '@heroicons/react/24/outline';
+import { useTranslations } from 'next-intl';
 
 const InfoSection = () => {
+  const t = useTranslations('info');
+  
   const infoItems = [
     {
       icon: ClockIcon,
-      title: "24/7 Круглосуточно",
-      description: "Наши специалисты работают круглосуточно и готовы выехать к месту ДТП в любое время суток. Быстрое реагирование и профессиональная помощь."
+      title: t('items.24_7.title'),
+      description: t('items.24_7.description')
     },
     {
       icon: ShieldCheckIcon,
-      title: "Профессиональная Экспертиза",
-      description: "Квалифицированные эксперты с многолетним опытом проведут полную оценку ущерба и оформят все необходимые документы согласно требованиям."
+      title: t('items.expertise.title'),
+      description: t('items.expertise.description')
     },
     {
       icon: CurrencyDollarIcon,
-      title: "Доступные Цены",
-      description: "Самые конкурентные цены в Ташкенте на услуги европротокола. Прозрачное ценообразование без скрытых платежей."
+      title: t('items.prices.title'),
+      description: t('items.prices.description')
     }
   ];
 
@@ -57,10 +60,10 @@ const InfoSection = () => {
         <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 mb-16 text-center text-white">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Нужна срочная помощь?
+              {t('urgentHelp.title')}
             </h2>
             <p className="text-xl mb-8 text-blue-100">
-              Звоните прямо сейчас! Наш аварийный комиссар выедет к вам в течение 15 минут
+              {t('urgentHelp.description')}
             </p>
             <a 
               href="tel:+998993280777"
@@ -70,7 +73,7 @@ const InfoSection = () => {
               +998 99 328 07 77
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Звонок бесплатный • Консультация бесплатная
+              {t('urgentHelp.freeCall')}
             </p>
           </div>
         </div>
@@ -79,11 +82,10 @@ const InfoSection = () => {
         <div className="bg-white rounded-2xl p-8 shadow-lg">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Как оформить европротокол?
+              {t('video.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Посмотрите подробную инструкцию о том, как правильно оформить европротокол 
-              и какие документы необходимы для получения страховой выплаты
+              {t('video.description')}
             </p>
           </div>
 
@@ -141,22 +143,22 @@ const InfoSection = () => {
         <div className="mt-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 rounded-2xl p-8 md:p-12 text-white">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Услуги европротокола
+              {t('services.title')}
             </h2>
             
             {/* Pricing */}
             <div className="mb-8">
               <p className="text-red-400 text-lg line-through mb-2">
-                1 200 000.00 so'm
+                {t('services.originalPrice')}
               </p>
               <p className="text-4xl md:text-5xl font-bold text-white">
-                999 999.95 so'm
+                {t('services.currentPrice')}
               </p>
             </div>
 
             <h3 className="text-2xl md:text-3xl font-bold mb-6">
-              МЫ РАБОТАЕМ КРУГЛОСУТОЧНО<br />
-              С НАМИ — ПРОСТО И БЫСТРО
+              {t('services.mainTitle')}<br />
+              {t('services.subtitle')}
             </h3>
           </div>
 
@@ -164,17 +166,12 @@ const InfoSection = () => {
             <div className="grid md:grid-cols-2 gap-8 text-left">
               <div>
                 <p className="text-yellow-400 text-lg leading-relaxed mb-6">
-                  Пользуясь нашими услугами, вы можете быть уверены, что ваш Европротокол будет составлен 
-                  правильно, что важно для последующего урегулирования страховых и юридических вопросов. 
-                  Обратитесь к нам, и мы обеспечим вам надежную поддержку на каждом этапе.
+                  {t('services.description1')}
                 </p>
               </div>
               <div>
                 <p className="text-white text-lg leading-relaxed">
-                  Правильное заполнение Европротокола играет решающую роль в процессе урегулирования 
-                  страховых и юридических вопросов после ДТП. Ошибки или пропуски в заполнении могут 
-                  привести к недопониманиям, задержкам в процессе урегулирования и негативным 
-                  последствиям для сторон происшествия.
+                  {t('services.description2')}
                 </p>
               </div>
             </div>

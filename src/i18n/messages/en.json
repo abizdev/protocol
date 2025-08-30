@@ -61,6 +61,25 @@
     "additionalDescription1": "We also offer additional services related to accident settlement, including consultations on insurance and legal issues, assistance in preparing necessary documents and supporting the client at all stages of settlement.",
     "additionalDescription2": "Trust our experience and professionalism to ensure proper and effective accident settlement and protect your interests in case of a traffic accident.",
     "writeToTelegram": "Write to Telegram",
-    "copyright": "© 2024 Europrotocol. All rights reserved."
+    "copyright": "© 2024 Europrotocol. All rights reserved.",
+    "contacts": "Contacts",
+    "services": "Services",
+    "workingHours": "Working Hours",
+    "servicesItems": {
+      "europrotocol": "Europrotocol registration",
+      "damageAssessment": "Damage assessment",
+      "consultation": "Accident consultations",
+      "legalSupport": "Legal support"
+    },
+    "workingHoursItems": {
+      "24_7": "24/7 Around the clock",
+      "noWeekends": "No weekends",
+      "emergencyCall": "Emergency call"
+    },
+    "contactInfo": {
+      "phone": "+998 99 328 07 77",
+      "email": "info@europrotocol.uz",
+      "address": "Tashkent, Uzbekistan"
+    }
   }
 }

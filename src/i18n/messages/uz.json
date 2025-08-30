@@ -61,6 +61,25 @@
     "additionalDescription1": "Shuningdek, biz YTH ni hal qilish bilan bog'liq qo'shimcha xizmatlarni taklif qilamiz, jumladan sug'urta va huquqiy masalalar bo'yicha maslahatlar, kerakli hujjatlarni rasmiylashtirish va mijozni hal qilishning barcha bosqichlarida qo'llab-quvvatlash.",
     "additionalDescription2": "YTH ni to'g'ri va samarali hal qilish va yo'l-transport hodisasi holatida o'z manfaatlaringizni himoya qilish uchun bizning tajriba va professionalligimizga ishoning.",
     "writeToTelegram": "Telegramga yozish",
-    "copyright": "© 2024 Yevroprotokol. Barcha huquqlar himoyalangan."
+    "copyright": "© 2024 Yevroprotokol. Barcha huquqlar himoyalangan.",
+    "contacts": "Aloqalar",
+    "services": "Xizmatlar",
+    "workingHours": "Ish vaqti",
+    "servicesItems": {
+      "europrotocol": "Yevroprotokol rasmiylashtirish",
+      "damageAssessment": "Zarar baholash",
+      "consultation": "YTH bo'yicha maslahatlar",
+      "legalSupport": "Huquqiy yordam"
+    },
+    "workingHoursItems": {
+      "24_7": "24/7 Doimo",
+      "noWeekends": "Dam olish kunlarisiz",
+      "emergencyCall": "Favqulodda chaqiruv"
+    },
+    "contactInfo": {
+      "phone": "+998 99 328 07 77",
+      "email": "info@europrotocol.uz",
+      "address": "Toshkent, O'zbekiston"
+    }
   }
 }
