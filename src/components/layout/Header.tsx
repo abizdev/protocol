@@ -3,7 +3,9 @@
 import { useState, useEffect } from 'react';
 import { PhoneIcon, ChevronDownIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
 import { useTranslations, useLocale } from 'next-intl';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
+import Image from 'next/image';
+import { useScrollRestoration } from '@/hooks/useScrollRestoration';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -11,6 +13,8 @@ const Header = () => {
   const t = useTranslations('header');
   const locale = useLocale();
   const router = useRouter();
+  const pathname = usePathname();
+  const { saveScrollPosition } = useScrollRestoration();
 
   const languages = [
     { code: 'ru', name: 'Русский', flag: '🇷🇺' },
@@ -26,29 +30,18 @@ const Header = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    // Restore scroll position after language change
-    const savedScrollPosition = sessionStorage.getItem('scrollPosition');
-    if (savedScrollPosition) {
-      setTimeout(() => {
-        window.scrollTo(0, parseInt(savedScrollPosition));
-        sessionStorage.removeItem('scrollPosition');
-      }, 100);
-    }
-
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const handleLanguageChange = (langCode: string) => {
     setIsLanguageOpen(false);
     
-    // Store current scroll position in sessionStorage
-    sessionStorage.setItem('scrollPosition', window.scrollY.toString());
+    // Save current scroll position before navigation
+    saveScrollPosition();
     
     // Get current path without locale
-    const currentPath = window.location.pathname;
-    const pathWithoutLocale = currentPath.replace(/^\/(ru|uz|en)/, '');
-    const newPath = `/${langCode}${pathWithoutLocale || '/'}`;
+    const pathWithoutLocale = pathname.replace(/^\/(ru|uz|en)/, '') || '/';
+    const newPath = `/${langCode}${pathWithoutLocale}`;
     
     // Navigate to new locale
     router.push(newPath);
@@ -59,42 +52,18 @@ const Header = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
           ? 'bg-white shadow-lg backdrop-blur-md bg-opacity-95' 
-          : 'bg-transparent'
+          : 'bg-white'
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           
           {/* Logo */}
-          <div className="flex items-center">
-            <div className="flex items-center space-x-3">
-              <div className={`w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center transition-colors duration-300 ${
-                isScrolled ? 'bg-blue-600' : 'bg-opacity-20'
-              }`}>
-                <svg 
-                  className={`w-6 h-6 md:w-7 md:h-7 transition-colors duration-300 ${
-                    isScrolled ? 'text-white' : 'text-white'
-                  }`} 
-                  fill="currentColor" 
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                </svg>
-              </div>
-              <div>
-                <h1 className={`text-lg md:text-xl font-bold transition-colors duration-300 ${
-                  isScrolled ? 'text-gray-800' : 'text-white'
-                }`}>
-                  {t('company')}
-                </h1>
-                <p className={`text-xs md:text-sm transition-colors duration-300 ${
-                  isScrolled ? 'text-gray-600' : 'text-gray-200'
-                }`}>
-                  {t('tagline')}
-                </p>
-              </div>
-            </div>
-          </div>
+          <img
+            src="/images/logo.png"
+            alt="Europrotocol Logo"
+            className="h-[350px] object-contain"
+          />
 
           {/* Right Side - Language Switcher and Contact Links */}
           <div className="flex items-center space-x-2 md:space-x-3">

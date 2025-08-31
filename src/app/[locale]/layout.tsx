@@ -5,6 +5,7 @@ import { routing } from '@/i18n/routing'
 import { setRequestLocale } from 'next-intl/server'
 import { Geist, Geist_Mono } from "next/font/google";
 import type { Metadata } from "next";
+import ScrollRestoration from '@/components/ScrollRestoration';
 import '../globals.css';
 
 const geistSans = Geist({
@@ -46,6 +47,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NextIntlClientProvider messages={messages}>
+          <ScrollRestoration />
           {children}
         </NextIntlClientProvider>
       </body>
