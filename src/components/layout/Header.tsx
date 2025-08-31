@@ -69,7 +69,7 @@ const Header = () => {
           <div className="flex items-center">
             <div className="flex items-center space-x-3">
               <div className={`w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center transition-colors duration-300 ${
-                isScrolled ? 'bg-blue-600' : 'bg-white bg-opacity-20'
+                isScrolled ? 'bg-blue-600' : 'bg-opacity-20'
               }`}>
                 <svg 
                   className={`w-6 h-6 md:w-7 md:h-7 transition-colors duration-300 ${
@@ -103,11 +103,7 @@ const Header = () => {
             <div className="relative">
               <button
                 onClick={() => setIsLanguageOpen(!isLanguageOpen)}
-                className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-all duration-300 hover:scale-105 ${
-                  isScrolled 
-                    ? 'bg-gray-100 hover:bg-gray-200 text-gray-800' 
-                    : 'bg-white bg-opacity-20 hover:bg-opacity-30 text-white backdrop-blur-sm'
-                }`}
+                className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-all duration-300 bg-gray-100 hover:bg-gray-200 text-gray-800 hover:scale-105`}
               >
                 <GlobeAltIcon className="w-4 h-4" />
                 <span className="text-lg">{currentLanguage?.flag}</span>
@@ -138,11 +134,7 @@ const Header = () => {
               href="https://t.me/europrotocol_uz"
               target="_blank"
               rel="noopener noreferrer"
-              className={`flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg transition-all duration-300 hover:scale-105 ${
-                isScrolled 
-                  ? 'bg-blue-600 hover:bg-blue-700 text-white' 
-                  : 'bg-white bg-opacity-20 hover:bg-opacity-30 text-white backdrop-blur-sm'
-              }`}
+              className={`flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg transition-all duration-300 hover:scale-105 bg-blue-600 hover:bg-blue-700 text-white `}
               title="Telegram"
             >
               <svg className="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">

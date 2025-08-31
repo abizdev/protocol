@@ -184,8 +184,8 @@ const InfoSection = () => {
                     <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <h4 className="text-lg font-semibold mb-2">Быстрое оформление</h4>
-                <p className="text-gray-300 text-sm">
+                <h4 className="text-lg text-black font-semibold mb-2">Быстрое оформление</h4>
+                <p className="text-black text-sm">
                   Оформление документов в течение 30 минут на месте происшествия
                 </p>
               </div>
@@ -196,8 +196,8 @@ const InfoSection = () => {
                     <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <h4 className="text-lg font-semibold mb-2">Гарантия качества</h4>
-                <p className="text-gray-300 text-sm">
+                <h4 className="text-lg text-black font-semibold mb-2">Гарантия качества</h4>
+                <p className="text-black text-sm">
                   100% гарантия правильного оформления всех документов
                 </p>
               </div>
@@ -208,8 +208,8 @@ const InfoSection = () => {
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
                 </div>
-                <h4 className="text-lg font-semibold mb-2">Поддержка 24/7</h4>
-                <p className="text-gray-300 text-sm">
+                <h4 className="text-lg text-black font-semibold mb-2">Поддержка 24/7</h4>
+                <p className="text-black text-sm">
                   Круглосуточная консультационная поддержка по всем вопросам
                 </p>
               </div>
