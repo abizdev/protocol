@@ -35,29 +35,28 @@ const Header = () => {
 
   const handleLanguageChange = (langCode: string) => {
     setIsLanguageOpen(false);
-    
+
     // Save current scroll position before navigation
     saveScrollPosition();
-    
+
     // Get current path without locale
     const pathWithoutLocale = pathname.replace(/^\/(ru|uz|en)/, '') || '/';
     const newPath = `/${langCode}${pathWithoutLocale}`;
-    
+
     // Navigate to new locale
     router.push(newPath);
   };
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white shadow-lg backdrop-blur-md bg-opacity-95' 
-          : 'bg-white'
-      }`}
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+        ? 'bg-white shadow-lg backdrop-blur-md bg-opacity-95'
+        : 'bg-white'
+        }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
-          
+
           {/* Logo */}
           <img
             src="/images/logo.png"
@@ -67,7 +66,7 @@ const Header = () => {
 
           {/* Right Side - Language Switcher and Contact Links */}
           <div className="flex items-center space-x-2 md:space-x-3">
-            
+
             {/* Language Switcher */}
             <div className="relative">
               <button
@@ -86,9 +85,8 @@ const Header = () => {
                     <button
                       key={lang.code}
                       onClick={() => handleLanguageChange(lang.code)}
-                      className={`w-full text-left px-4 py-2 hover:bg-gray-100 flex items-center space-x-3 ${
-                        locale === lang.code ? 'bg-blue-50 text-blue-600' : 'text-gray-700'
-                      }`}
+                      className={`w-full text-left px-4 py-2 hover:bg-gray-100 flex items-center space-x-3 ${locale === lang.code ? 'bg-blue-50 text-blue-600' : 'text-gray-700'
+                        }`}
                     >
                       <span className="text-lg">{lang.flag}</span>
                       <span className="text-sm font-medium">{lang.name}</span>
@@ -97,7 +95,7 @@ const Header = () => {
                 </div>
               )}
             </div>
-            
+
             {/* Telegram Link - Icon Only */}
             <a
               href="https://t.me/europrotocol_uz"
@@ -107,18 +105,17 @@ const Header = () => {
               title="Telegram"
             >
               <svg className="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
               </svg>
             </a>
 
             {/* Phone Link - Icon Only */}
             <a
               href="tel:+998993280777"
-              className={`flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg transition-all duration-300 hover:scale-105 ${
-                isScrolled 
-                  ? 'bg-yellow-500 hover:bg-yellow-600 text-black' 
-                  : 'bg-yellow-500 hover:bg-yellow-600 text-black'
-              }`}
+              className={`flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg transition-all duration-300 hover:scale-105 ${isScrolled
+                ? 'bg-yellow-500 hover:bg-yellow-600 text-black'
+                : 'bg-yellow-500 hover:bg-yellow-600 text-black'
+                }`}
               title="+998 99 328 07 77"
             >
               <PhoneIcon className="w-5 h-5 md:w-6 md:h-6" />
@@ -129,8 +126,8 @@ const Header = () => {
 
       {/* Click outside to close language dropdown */}
       {isLanguageOpen && (
-        <div 
-          className="fixed inset-0 z-40" 
+        <div
+          className="fixed inset-0 z-40"
           onClick={() => setIsLanguageOpen(false)}
         />
       )}
