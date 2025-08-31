@@ -26,15 +26,32 @@ const Header = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
+
+    // Restore scroll position after language change
+    const savedScrollPosition = sessionStorage.getItem('scrollPosition');
+    if (savedScrollPosition) {
+      setTimeout(() => {
+        window.scrollTo(0, parseInt(savedScrollPosition));
+        sessionStorage.removeItem('scrollPosition');
+      }, 100);
+    }
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const handleLanguageChange = (langCode: string) => {
     setIsLanguageOpen(false);
-    // Simple language switching by navigating to the new locale
+    
+    // Store current scroll position in sessionStorage
+    sessionStorage.setItem('scrollPosition', window.scrollY.toString());
+    
+    // Get current path without locale
     const currentPath = window.location.pathname;
     const pathWithoutLocale = currentPath.replace(/^\/(ru|uz|en)/, '');
-    router.push(`/${langCode}${pathWithoutLocale || '/'}`);
+    const newPath = `/${langCode}${pathWithoutLocale || '/'}`;
+    
+    // Navigate to new locale
+    router.push(newPath);
   };
 
   return (

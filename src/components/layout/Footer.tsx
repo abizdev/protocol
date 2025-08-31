@@ -15,7 +15,7 @@ const Footer = () => {
         
         {/* Contact Section */}
         <div className="text-center mb-12">
-          <div className="w-16 h-16 bg-white bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+          <div className="w-16 h-16 bg-blue-400 bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
             <ChatBubbleLeftRightIcon className="w-8 h-8 text-white" />
           </div>
           
@@ -66,7 +66,7 @@ const Footer = () => {
 
         {/* Additional Services Section */}
         <div className="text-center mb-12">
-          <div className="w-16 h-16 bg-white bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+          <div className="w-16 h-16 bg-blue-400 bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
             <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
             </svg>
